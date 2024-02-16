@@ -242,6 +242,8 @@
   width: calc(100% - 250px);
 }
 .home-section{
+  display: flex;
+  justify-content: center;
   position: relative;
   background: #E4E9F7;
   min-height: 100vh;
@@ -250,6 +252,7 @@
   width: calc(100% - 78px);
   transition: all 0.5s ease;
   z-index: 2;
+  /* padding: 20px; */
 }
 .sidebar.open ~ .home-section{
   left: 250px;
@@ -257,7 +260,7 @@
 }
 .home-section .text{
   display: inline-block;
-  color: #11101d;
+  color: white;
   font-size: 25px;
   font-weight: 500;
   margin: 18px
@@ -267,7 +270,57 @@
     display: none;
   }
 }
-   </style>
+.container {
+  
+            margin-top: 30px;
+            max-width: 600px;
+            /* margin:  auto; */
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0b0c0b; /* Adding bottom border */
+            padding-bottom: 20px; /* Optional: Add some space between text and border */
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], textarea {
+            width: calc(100% - 18px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
+            border-color: #4CAF50;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            padding-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            
+        }
+</style>
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -345,17 +398,60 @@
   <section class="home-section">
     <!-- TYPE HERE  -->
     
-
-
-
-
-
-
-
-
-
-
-</section>
+    
+    <div class="container">
+        <form action="#" method="post">
+            <h2>Company Details Form</h2>
+            <div class="form-group">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="website">Website:</label>
+                <input type="text" id="website" name="website">
+            </div>
+            <div class="form-group">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="number" id="pincode" name="pincode">
+            </div>
+            <div class="form-group">
+                <label for="gstNo">GST No.:</label>
+                <input type="text" id="gstNo" name="gstNo" required>
+            </div>
+            <div class="form-group">
+                <label for="apiKey">API Key:</label>
+                <input type="text" id="apiKey" name="apiKey">
+            </div>
+            <div class="form-group">
+                <label for="about">About Us:</label>
+                <textarea id="about" name="about" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+  </section>
   <script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
