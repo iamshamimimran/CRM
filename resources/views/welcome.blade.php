@@ -297,6 +297,13 @@
        <span class="tooltip">Messages</span>
      </li>
      <li>
+       <a href="emailconfi">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Setup</span>
+       </a>
+       <span class="tooltip">Setup</span>
+     </li>
+     <li>
        <a href="#">
          <i class='bx bx-pie-chart-alt-2' ></i>
          <span class="links_name">Analytics</span>
@@ -304,7 +311,7 @@
        <span class="tooltip">Analytics</span>
      </li>
      <li>
-       <a href="#">
+       <a href="1">
          <i class='bx bx-folder' ></i>
          <span class="links_name">File Manager</span>
        </a>
@@ -339,23 +346,9 @@
      </li>
     </ul>
   </div>
-  <!-- <section class="nav-section" style="border: 1px solid red;">
-      <div class="text " >Dashboard</div>
+  <!-- <section class="nav-section">
   </section> -->
-  <section class="home-section">
-    <!-- TYPE HERE  -->
-    
 
-
-
-
-
-
-
-
-
-
-</section>
   <script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
