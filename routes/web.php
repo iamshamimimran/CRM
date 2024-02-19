@@ -19,6 +19,71 @@ Route::get('/', function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/customerDetails', function () {
+    return view('customerDetails');
+});
+
+
+
+
 Route::get('/emailconfi', function () {
     return view('emailconfi');
 });
