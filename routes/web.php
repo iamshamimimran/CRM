@@ -89,8 +89,8 @@ Route::get('/emailconfi', function () {
 });
 
 
-Route::get('/1', function () {
-    return view('1');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
 
