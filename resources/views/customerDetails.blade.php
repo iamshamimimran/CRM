@@ -324,12 +324,12 @@
 <body>
   <div class="sidebar">
     <div class="logo-details">
-        <div class="logo_name">CRM</div>
+        <div class="logo_name">Xeotec</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
       <li>
-        <a href="#">
+        <a href="/dashboard">
           <i class='bx bx-grid-alt'></i>
           <span class="links_name">Dashboard</span>
         </a>
@@ -349,6 +349,13 @@
        </a>
        <span class="tooltip">Messages</span>
      </li>
+     <li>
+      <a href="emailconfi">
+        <i class='bx bxs-comment-detail'></i>
+        <span class="links_name">Setup</span>
+      </a>
+      <span class="tooltip">Setup</span>
+    </li>
      <li>
        <a href="#">
          <i class='bx bx-pie-chart-alt-2' ></i>
