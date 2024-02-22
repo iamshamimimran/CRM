@@ -89,6 +89,10 @@ Route::get('/emailconfi', function () {
 });
 
 
+<<<<<<< HEAD
+Route::get('/user', function () {
+    return view('user');
+=======
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
@@ -98,6 +102,7 @@ Route::get('/setting', function () {
 });
 Route::get('/file', function () {
     return view('file');
+>>>>>>> 76c4daa256d4750e770527d6ad6f12901a7e21ca
 });
 
 

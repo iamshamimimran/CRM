@@ -283,7 +283,7 @@
          <span class="tooltip">Dashboard</span>
       </li>
       <li>
-       <a href="#">
+       <a href="/user">
          <i class='bx bx-user' ></i>
          <span class="links_name">User</span>
        </a>
