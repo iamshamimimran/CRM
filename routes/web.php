@@ -93,5 +93,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/setting', function () {
+    return view('setting');
+});
+Route::get('/file', function () {
+    return view('file');
+});
+
+
+
 
 
