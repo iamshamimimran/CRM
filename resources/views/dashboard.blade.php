@@ -686,20 +686,21 @@ transform: scale(1.08);
 } 
 
 .box:nth-child(1) { 
-background-color: var(--one-use-color); 
+background-color:#000000; 
 } 
 .box:nth-child(2) { 
-background-color: var(--two-use-color); 
+background-color:#000000; 
 } 
 .box:nth-child(3) { 
-background-color: var(--one-use-color); 
+background-color:#000000; 
 } 
 .box:nth-child(4) { 
-background-color: var(--two-use-color); 
+background-color:#000000; 
 } 
 
 .box img { 
 height: 50px; 
+color: black;
 } 
 .box .text { 
 color: white; 
@@ -744,7 +745,7 @@ color: #5500cb;
 height: 35px; 
 width: 90px; 
 border-radius: 8px; 
-background-color: #5500cb; 
+background-color: #15111a; 
 color: white; 
 font-size: 15px; 
 border: none; 
@@ -997,7 +998,7 @@ border-radius: 4px;
        <span class="tooltip">Analytics</span>
      </li>
      <li>
-       <a href="#">
+       <a href="/file">
          <i class='bx bx-folder' ></i>
          <span class="links_name">File Manager</span>
        </a>
@@ -1018,7 +1019,7 @@ border-radius: 4px;
        <span class="tooltip">Customer Details</span>
      </li>
      <li>
-       <a href="#">
+       <a href="/setting">
          <i class='bx bx-cog' ></i>
          <span class="links_name">Setting</span>
        </a>
@@ -1056,9 +1057,7 @@ border-radius: 4px;
                         <h2 class="topic">Article Views</h2> 
                     </div> 
   
-                    <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
-                        alt="Views"> 
+                    <img src="https://img.icons8.com/ios/50/FFFFFF/visible--v1.png" alt="visible--v1"/>
                 </div> 
   
                 <div class="box box2"> 
@@ -1067,9 +1066,8 @@ border-radius: 4px;
                         <h2 class="topic">Likes</h2> 
                     </div> 
   
-                    <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" 
-                         alt="likes"> 
+                    <img src= "https://img.icons8.com/ios/50/FFFFFF/facebook-like--v1.png" alt="facebook-like--v1"/>
+                         
                 </div> 
   
                 <div class="box box3"> 
@@ -1078,104 +1076,108 @@ border-radius: 4px;
                         <h2 class="topic">Comments</h2> 
                     </div> 
   
-                    <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
-                        alt="comments"> 
+                    <img src="https://img.icons8.com/ios/50/FFFFFF/comments--v1.png" alt="comments--v1"/>
+                        
                 </div> 
   
                 <div class="box box4"> 
                     <div class="text"> 
-                        <h2 class="topic-heading">70</h2> 
-                        <h2 class="topic">Published</h2> 
+                        <h2 class="topic-heading">12</h2> 
+                        <h2 class="topic">Running Projects</h2> 
                     </div> 
   
-                    <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published"> 
+                    <img src="https://img.icons8.com/ios/50/FFFFFF/coming-soon.png" alt="coming-soon"/>
                 </div> 
             </div> 
   
             <div class="report-container"> 
                 <div class="report-header"> 
-                    <h1 class="recent-Articles">Recent Articles</h1> 
+                    <h1 class="recent-Articles">Upcoming events</h1> 
+                    <!-- <button class="view">View All</button>  -->
+                </div> 
+                <div class="report-body"> 
+                    <div class="report-topic-heading"> 
+                        <h3 class="t-op">Article</h3> 
+                        <h3 class="t-op">Views</h3> 
+                        <h3 class="t-op">Date</h3> 
+                        <h3 class="t-op">Status</h3> 
+                    </div> 
+  
+                    <div class="report-body"> 
+                        <div class="item1"> 
+                            <h3 class="t-op-nextlvl">Marketing policy</h3> 
+                            <h3 class="t-op-nextlvl">2.9k</h3> 
+                            <h3 class="t-op-nextlvl">23-02-2024</h3> 
+                           <h3 class="t-op-nextlvl label-tag">Zoom</h3> 
+                        </div> 
+  
+                        <div class="item1"> 
+                            <h3 class="t-op-nextlvl">Accounting policy</h3> 
+                            <h3 class="t-op-nextlvl">1.5k</h3> 
+                            <h3 class="t-op-nextlvl">24-02-2024</h3> 
+                            <h3 class="t-op-nextlvl label-tag">G-Meet</h3> 
+                        </div> 
+  
+                        <div class="item1"> 
+                            <h3 class="t-op-nextlvl">Marketing policy</h3> 
+                            <h3 class="t-op-nextlvl">1.1k</h3> 
+                            <h3 class="t-op-nextlvl">25-02-2024</h3> 
+                            <h3 class="t-op-nextlvl label-tag">Skype</h3> 
+                        </div> 
+  
+                        <div class="item1"> 
+                            <h3 class="t-op-nextlvl">Finance policy</h3> 
+                            <h3 class="t-op-nextlvl">1.2k</h3> 
+                            <h3 class="t-op-nextlvl">26-02-2024</h3> 
+                            <h3 class="t-op-nextlvl label-tag">Phone</h3> 
+                        </div> 
+  
+                        <div class="item1"> 
+                            <h3 class="t-op-nextlvl">Employee meeting</h3> 
+                            <h3 class="t-op-nextlvl">2.6k</h3> 
+                            <h3 class="t-op-nextlvl">27-02-2024</h3> 
+                            <h3 class="t-op-nextlvl label-tag">Zoom</h3> 
+                        </div> 
+  
+                  
+                    </div> 
+                </div> 
+            </div> 
+            <div class="report-container"> 
+                <div class="report-header"> 
+                    <h1 class="recent-Articles">Running Projects</h1> 
                     <!-- <button class="view">View All</button>  -->
                 </div> 
   
                 <div class="report-body"> 
                     <div class="report-topic-heading"> 
-                        <h3 class="t-op">Article</h3> 
-                        <h3 class="t-op">Views</h3> 
-                        <h3 class="t-op">Comments</h3> 
+                        <h3 class="t-op">Project Name</h3> 
                         <h3 class="t-op">Status</h3> 
                     </div> 
   
                     <div class="items"> 
                         <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 73</h3> 
-                            <h3 class="t-op-nextlvl">2.9k</h3> 
-                            <h3 class="t-op-nextlvl">210</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
+                            <h3 class="t-op-nextlvl">Nagadwallet</h3> 
+                           <h3 class="t-op-nextlvl label-tag">Processing</h3> 
                         </div> 
   
                         <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 72</h3> 
-                            <h3 class="t-op-nextlvl">1.5k</h3> 
-                            <h3 class="t-op-nextlvl">360</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
+                            <h3 class="t-op-nextlvl">XeoTec Website</h3> 
+                            <h3 class="t-op-nextlvl label-tag">Done</h3> 
                         </div> 
   
                         <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 71</h3> 
-                            <h3 class="t-op-nextlvl">1.1k</h3> 
-                            <h3 class="t-op-nextlvl">150</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
+                            <h3 class="t-op-nextlvl">Customer relationship management</h3> 
+                            <h3 class="t-op-nextlvl label-tag">Processing</h3>
                         </div> 
   
                         <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 70</h3> 
-                            <h3 class="t-op-nextlvl">1.2k</h3> 
-                            <h3 class="t-op-nextlvl">420</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
+                            <h3 class="t-op-nextlvl">student management system project</h3> 
+                         <h3 class="t-op-nextlvl label-tag">Done</h3> 
                         </div> 
   
-                        <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 69</h3> 
-                            <h3 class="t-op-nextlvl">2.6k</h3> 
-                            <h3 class="t-op-nextlvl">190</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
-                        </div> 
-  
-                        <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 68</h3> 
-                            <h3 class="t-op-nextlvl">1.9k</h3> 
-                            <h3 class="t-op-nextlvl">390</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
-                        </div> 
-  
-                        <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 67</h3> 
-                            <h3 class="t-op-nextlvl">1.2k</h3> 
-                            <h3 class="t-op-nextlvl">580</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
-                        </div> 
-  
-                        <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 66</h3> 
-                            <h3 class="t-op-nextlvl">3.6k</h3> 
-                            <h3 class="t-op-nextlvl">160</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
-                        </div> 
-  
-                        <div class="item1"> 
-                            <h3 class="t-op-nextlvl">Article 65</h3> 
-                            <h3 class="t-op-nextlvl">1.3k</h3> 
-                            <h3 class="t-op-nextlvl">220</h3> 
-                            <h3 class="t-op-nextlvl label-tag">Published</h3> 
-                        </div> 
-  
-                    </div> 
-                </div> 
-            </div> 
-</div>
+                        
+            </div>
 
 
 
