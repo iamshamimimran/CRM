@@ -24,8 +24,8 @@ Route::get('/emailconfi', function () {
 });
 
 
-Route::get('/1', function () {
-    return view('1');
+Route::get('/user', function () {
+    return view('user');
 });
 
 

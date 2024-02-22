@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: #E4E9F7;
         }
 
         .container {
@@ -47,49 +48,63 @@
     @include('welcome')
     <div class="container">
         <h2>Email Configuration</h2>
+        <hr class="my-4">
+        <br>
         
         <label for="smtpServer">SMTP Server:</label>
-        <input type="text" id="smtpServer" placeholder="Enter SMTP Server">
+        <input type="text" id="smtpServer" name="smtpServer" placeholder="Enter SMTP Server" required>
 
         <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Enter your username">
+        <input type="text" id="username" name="username" placeholer="Enter your N"required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="Enter your password">
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
         <label for="port">Port:</label>
-        <input type="text" id="port" placeholder="Enter SMTP Port">
+        <input type="text" id="port" name="port" placeholder="Enter SMTP Port" required>
 
         <button onclick="saveConfiguration()">Save Configuration</button>
     </div>
 
     <div class="container">
         <h2>Test SMTP Email</h2>
+        <hr class="my-4">
+        <br>
 
         <label for="testEmailRecipient">Recipient Email:</label>
-        <input type="text" id="testEmailRecipient" placeholder="Enter recipient email">
+        <input type="text" id="testEmailRecipient" placeholder="Enter recipient email" required>
 
         <button onclick="sendTestEmail()">Send Test Email</button>
     </div>
 
     <script>
-        function saveConfiguration() {
-            const smtpServer = document.getElementById('smtpServer').value;
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const port = document.getElementById('port').value;
+    function saveConfiguration() {
+        const smtpServer = document.getElementById('smtpServer').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const port = document.getElementById('port').value;
 
-            alert("Configuration saved successfully!");
+        if (smtpServer && username && port) {
+            if (password.length >= 8) {
+                alert("Configuration saved successfully!");
+            } else {
+                alert("Password must be at least 8 characters.");
+            }
+        } else {
+            alert("Please fill in all the fields.");
         }
+    }
 
-        function sendTestEmail() {
-            const recipientEmail = document.getElementById('testEmailRecipient').value;
+    function sendTestEmail() {
+        const recipientEmail = document.getElementById('testEmailRecipient').value;
 
+        if (recipientEmail) {
             alert("Test email sent successfully!");
+        } else {
+            alert("Please enter a recipient email.");
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
-
-
-
