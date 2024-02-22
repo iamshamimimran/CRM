@@ -283,7 +283,7 @@
          <span class="tooltip">Dashboard</span>
       </li>
       <li>
-       <a href="/user">
+       <a href="#">
          <i class='bx bx-user' ></i>
          <span class="links_name">User</span>
        </a>
@@ -311,7 +311,7 @@
        <span class="tooltip">Analytics</span>
      </li>
      <li>
-       <a href="1">
+       <a href="/file">
          <i class='bx bx-folder' ></i>
          <span class="links_name">File Manager</span>
        </a>
@@ -346,8 +346,9 @@
      </li>
     </ul>
   </div>
-  <!-- <section class="nav-section">
-  </section> -->
+  <section class="nav-section">
+    <h1>hi</h1>
+  </section>
 
   <script>
   let sidebar = document.querySelector(".sidebar");
